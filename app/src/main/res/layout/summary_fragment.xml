@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gw_buff"
+    android:orientation="vertical"
+android:id="@+id/summary_fragment_id"
+    android:padding="10pt">
+<!--
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="4pt"
+        android:background="@color/gw_gray"
+
+        android:id="@+id/reset_button_id"
+        android:text="@string/button_reset" />
+        -->
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="80pt"
+        android:layout_marginTop="50dp"
+        android:background="@color/gw_buff"
+        android:id="@+id/relative_graph_id"
+        android:orientation="vertical"
+        android:padding="6pt">
+        <TextView android:id="@+id/yearProgressRectangle"
+            android:layout_width="@dimen/progress_bar_length"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="60dp"
+            android:paddingTop="7dp"
+            android:text="100 days left"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/progress_rectangle"/>
+        <TextView android:id="@+id/vacationProgressRectangle"
+            android:layout_width="@dimen/progress_bar_length"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@id/yearProgressRectangle"
+            android:paddingLeft="30dp"
+            android:paddingTop="7dp"
+            android:text="108 vacation hours left"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/progress_rectangle"/>
+        <TextView android:id="@+id/sickProgressRectangle"
+            android:layout_width="@dimen/progress_bar_length"
+            android:layout_height="40dp"
+            android:paddingLeft="45dp"
+            android:paddingTop="7dp"
+            android:text="108 sick hours left"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/sick_rectangle"
+            android:layout_below="@id/vacationProgressRectangle"
+            />
+        </RelativeLayout>
+</LinearLayout>

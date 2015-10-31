@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/menu_delete_entry" android:title="Delete Entry"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/menu_hide_entry"
+        app:showAsAction="ifRoom"
+        android:title="Hide Entry" />
+
+</menu>

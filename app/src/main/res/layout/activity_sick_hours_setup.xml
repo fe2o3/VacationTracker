@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.rusty.myapplication.view.SickHoursSetupActivity">
+
+
+    <TextView
+        android:id="@+id/hours_label"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="45dp"
+        android:textSize="18sp"
+        android:text="Initial sick hours"/>
+    <TextView android:id="@+id/date_label"
+        android:layout_width="150dp"
+        android:layout_height="80dp"
+        android:textSize="18sp"
+        android:layout_below="@id/hours_label"
+
+        android:text="Start date for gaining sick hours"/>
+    <EditText android:id="@+id/edit_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_toRightOf="@id/hours_label"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/hours_label"
+        android:hint="@string/edit_hours"/>
+
+
+    <TextView
+        android:id="@+id/date_entered"
+        android:layout_width="130dp"
+
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/date_label"
+        android:hint="Pick a date"
+        android:layout_toRightOf="@id/date_label"/>
+
+    <ImageButton android:id="@+id/startDatePickerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="showDatePickerDialog"
+        android:layout_toRightOf="@id/date_entered"
+        android:layout_alignTop="@id/date_label"
+        android:src="@android:drawable/ic_menu_my_calendar"/>
+
+    <Button android:background="@color/gw_gray"
+        android:layout_width="wrap_content"
+        android:onClick="setStartingInfo"
+        android:layout_margin="4pt"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date_label"        android:text="Save"/>
+
+</RelativeLayout>

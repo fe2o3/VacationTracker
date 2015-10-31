@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+
+    <item android:id="@+id/action_new_vacation"
+        app:showAsAction="ifRoom"
+        android:title="@string/menu_vacation" />
+    <item android:id="@+id/action_new_sick"
+        app:showAsAction="ifRoom"
+        android:title="@string/menu_sick" />
+    <item android:id="@+id/dialog_set_sick_start_date"
+
+        android:title="Set Sick Start Date" />
+    <item android:id="@+id/menu_unhide_entries"
+
+        android:title="Unhide All Entries" />
+</menu>

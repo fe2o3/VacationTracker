@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Vacation Tracker</string>
+
+    <string name="edit_hours">Enter hours</string>
+<string name="button_vacation">vacation</string>
+    <string name="button_sick">sick time</string>
+    <color name="gw_buff">#ffeebb</color>
+    <color name="gw_yellow">#ffc82e
+    </color>
+<color name="gw_gray">#c8b18b
+</color>
+
+    <string name="menu_vacation">+Vacation</string>
+    <string name="menu_sick">+Sick</string>
+
+    <color name="gw_light_blue"> #0096d6</color>
+    <color name="gw_dark_blue"> #004065</color>
+    <string name="action_settings">Settings</string>
+
+    <string name="button_hireDate">Set Hire Date</string>
+    <string name="button_enter">Log Hours</string>
+    <string name="button_reset">Reset Data</string>
+
+
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_vacation_entry">Log a Vacation</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_sick_entry">Log Sick Leave</string>
+    <string name="title_activity_sick_hours_setup">Setup Hire Date</string>
+
+
+</resources>
